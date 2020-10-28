@@ -16,8 +16,8 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String username;
+    private Long id; //идентификатор пользователя//
+    private String username; //имя пользователя//
     @OneToMany(mappedBy = "username", fetch = FetchType.EAGER)
     List<Note> notes;
 

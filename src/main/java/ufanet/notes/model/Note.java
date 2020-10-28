@@ -16,9 +16,9 @@ import java.sql.Timestamp;
 public class Note {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String title;
-    private Timestamp timestamp;
-    private String note;
+    private String title; //название заметки//
+    private Timestamp timestamp; //штамп времени создания и редактирования//
+    private String note; //тело заметки//
     @ManyToOne
     @JoinColumn(name = "username")
     User user;
