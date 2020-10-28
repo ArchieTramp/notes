@@ -9,6 +9,7 @@ import java.sql.Timestamp;
 import java.util.List;
 
 /**
+ * @author Artur Gilyazov
  * Класс реализует основной функцинал
  * - добавление новой заметки
  * - удаление заметки
@@ -16,7 +17,7 @@ import java.util.List;
  * - получение всех заметок пользователя
  **/
 
-
+// TODO: 28.10.2020 продумать ввод текста для методов
 public class NoteServicesImpl implements NoteServices {
     @Autowired
     NoteRepository noteRepository;
@@ -40,6 +41,7 @@ public class NoteServicesImpl implements NoteServices {
         String title = "addtitlescanorbuffer";
         noteRepository.findByTitle(title);
         return null;
+        // TODO: 28.10.2020 продумать редактирование заметки, заголовок не трогаем, дату меняем, изменяяем заметку.
     }
 
     @Override

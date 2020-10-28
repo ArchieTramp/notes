@@ -6,6 +6,7 @@ import ufanet.notes.model.User;
 import java.util.Optional;
 
 /**
+ * @author Artur Gilyazov
  * Репозиторий для хранения пользователей
  **/
 

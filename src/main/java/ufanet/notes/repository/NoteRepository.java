@@ -5,9 +5,9 @@ import ufanet.notes.model.Note;
 import ufanet.notes.model.User;
 
 import java.util.List;
-import java.util.Optional;
 
 /**
+ * @author Artur Gilyazov
  * Репозиторий для хранения заметок
  **/
 

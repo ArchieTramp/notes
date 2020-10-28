@@ -5,6 +5,11 @@ import lombok.*;
 import javax.persistence.*;
 import java.util.List;
 
+/**
+ * @author Artur Gilyazov
+ * Модель юзера
+ **/
+
 @Data
 @ToString
 @AllArgsConstructor

@@ -3,7 +3,11 @@ package ufanet.notes.model;
 import lombok.*;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
+
+/**
+ * @author Artur Gilyazov
+ * Модель записки
+ **/
 
 @Data
 @ToString
