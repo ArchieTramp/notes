@@ -1,13 +1,57 @@
 package ufanet.notes.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import ufanet.notes.model.Note;
+import ufanet.notes.model.User;
+import ufanet.notes.repository.NoteRepository;
+
+import java.sql.Timestamp;
+import java.util.List;
+
 /**
-Класс реализует основной функцинал
- - добавление новой заметки
- - удаление заметки
- - редактирование заметки
- - получение всех заметок пользователя
+ * Класс реализует основной функцинал
+ * - добавление новой заметки
+ * - удаление заметки
+ * - редактирование заметки
+ * - получение всех заметок пользователя
  **/
 
 
-public class NoteServicesImpl {
+public class NoteServicesImpl implements NoteServices {
+    @Autowired
+    NoteRepository noteRepository;
+
+
+    @Override
+    public void addNote(Note note) {
+        String newTitle = "add";
+        Long newTimeStamp = System.currentTimeMillis();
+        String newBodyOfNote = "texts";
+        Note newNote = Note.builder()
+                .title(newTitle)
+                .timestamp(newTimeStamp)
+                .note(newBodyOfNote)
+                .build();
+        noteRepository.save(newNote);
+    }
+
+    @Override
+    public String editNote(Note note) {
+        String title = "addtitlescanorbuffer";
+        noteRepository.findByTitle(title);
+        return null;
+    }
+
+    @Override
+    public void deleteNote(Note note) {
+        String title = "ADDFUCKINTITLE";
+        noteRepository.deleteByTitle(title);
+    }
+
+    @Override
+    public void getAllNotes(User user) {
+        List<Note> allNotes = noteRepository.findAllByUsername(user);
+        System.out.println(allNotes);
+        // TODO: 28.10.2020 заоверрайдить туСтринг чтобы вывод названия, даты и самой заметки происходил корректно
+    }
 }

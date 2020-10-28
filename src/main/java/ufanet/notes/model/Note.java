@@ -17,7 +17,7 @@ public class Note {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String title; //название заметки//
-    private Timestamp timestamp; //штамп времени создания и редактирования//
+    private Long timestamp; //штамп времени создания и редактирования//
     private String note; //тело заметки//
     @ManyToOne
     @JoinColumn(name = "username")
