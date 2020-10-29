@@ -16,7 +16,7 @@ public interface NoteRepository extends JpaRepository<Note, Long> {
 
     List<Note> findAllByUsername(User username);
 
-    Note deleteByTitle(String title);
+    Note deleteNoteByTitle(String title);
 
 
 }
