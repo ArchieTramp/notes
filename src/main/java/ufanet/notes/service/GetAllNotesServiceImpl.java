@@ -22,9 +22,7 @@ public class GetAllNotesServiceImpl implements GetAllNotesService {
     @Override
     public List<Note> getAllNotes(User user) {
 
-        List<Note> allNotes = noteRepository.findAllByUsername(user);
-
-        return allNotes;
+        return noteRepository.findAllByUsername(user);
 
         // TODO: 28.10.2020 заоверрайдить туСтринг чтобы вывод названия, даты и самой заметки происходил корректно
         // сделать все это в контроллере
