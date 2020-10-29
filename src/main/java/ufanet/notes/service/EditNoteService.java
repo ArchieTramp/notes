@@ -9,5 +9,5 @@ import ufanet.notes.model.Note;
 
 public interface EditNoteService {
 
-    String editNote(Note note);
+    void editNote(Note note);
 }

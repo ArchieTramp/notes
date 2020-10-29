@@ -5,8 +5,12 @@ import org.springframework.stereotype.Service;
 import ufanet.notes.model.Note;
 import ufanet.notes.repository.NoteRepository;
 
-@Service
+/**
+ * @author Artur Gilyazov
+ * Сервис создания заметки
+ **/
 
+@Service
 public class AddNoteServiceImpl implements AddNoteService {
 
     @Autowired
