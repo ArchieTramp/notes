@@ -12,7 +12,7 @@ VALUES
 CREATE TABLE notes
 (
     title     varchar(24)  NOT NULL,
-    timestamp integer         NOT NULL,
+    timestamp integer         NOT NULL default now(),
     note      varchar(240) NOT NULL
 );
 INSERT INTO notes (title, timestamp, note)

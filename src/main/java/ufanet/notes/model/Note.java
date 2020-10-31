@@ -17,7 +17,7 @@ import javax.persistence.*;
 @Entity
 @EqualsAndHashCode
 @Table(name = "notes", uniqueConstraints = @UniqueConstraint(columnNames = {"title"}))
-public class Note {
+public final class Note {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private String title; //название заметки//

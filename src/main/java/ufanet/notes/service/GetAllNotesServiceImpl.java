@@ -25,6 +25,6 @@ public class GetAllNotesServiceImpl implements GetAllNotesService {
         return noteRepository.findAllByUsername(user);
 
         // TODO: 28.10.2020 заоверрайдить туСтринг чтобы вывод названия, даты и самой заметки происходил корректно
-        // сделать все это в контроллере
+        // сделать все это в контроллере и в цикле
     }
 }

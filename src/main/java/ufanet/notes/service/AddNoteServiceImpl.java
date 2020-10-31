@@ -34,3 +34,5 @@ public class AddNoteServiceImpl implements AddNoteService {
 
     }
 }
+
+// TODO: 31.10.2020  Исправить вводы текстов
