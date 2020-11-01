@@ -20,7 +20,7 @@ public class EditNoteServiceImpl implements EditNoteService {
     @Override
     public void editNote(Note note) {
 
-        String editNote = "HowToEditThisNote";
+        String editNote = "текст загулшка";
         note.setNote(editNote);
         Long newTimeStamp = System.currentTimeMillis();
         note.setTimestamp(newTimeStamp);

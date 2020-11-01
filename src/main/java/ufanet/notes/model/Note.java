@@ -9,6 +9,8 @@ import javax.persistence.*;
  * Модель записки
  **/
 
+@Getter
+@Setter
 @Data
 @ToString
 @AllArgsConstructor

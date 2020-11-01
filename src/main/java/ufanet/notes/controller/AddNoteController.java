@@ -7,6 +7,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import ufanet.notes.model.Note;
 import ufanet.notes.service.AddNoteService;
 
+/**
+ * @author Artur Gilyazov
+ * Контроллер новой заметки
+ **/
+
 @Controller
 public class AddNoteController {
 
@@ -15,6 +20,7 @@ public class AddNoteController {
 
     @PostMapping("/newnote")
     public String addNewNote(Model model) {
+
         Note note = new Note();
         addNoteService.addNote(note);
         model.addAttribute("newnote", note);

@@ -8,6 +8,11 @@ import ufanet.notes.model.Note;
 import ufanet.notes.repository.NoteRepository;
 import ufanet.notes.service.EditNoteService;
 
+/**
+ * @author Artur Gilyazov
+ * Контроллер изменения заметок
+ **/
+
 @Controller
 public class EditNoteController {
     @Autowired
@@ -18,8 +23,8 @@ public class EditNoteController {
 
     @PutMapping("/editer")
     public String EditNote(Model model) {
-
-        String title = "1111";
+        //Заголовок-заглушка, реализация возможна через jsp странцину.
+        String title = "заглушка";
         Note note = noteRepository.findByTitle(title);
         editNoteService.editNote(note);
         model.addAttribute("editednote", note);

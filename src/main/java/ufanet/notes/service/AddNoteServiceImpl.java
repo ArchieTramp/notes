@@ -19,10 +19,10 @@ public class AddNoteServiceImpl implements AddNoteService {
     @Override
     public void addNote(Note note) {
 
-        //исправить ввод текста
-        String newTitle = "add";
+        
+        String newTitle = "Заглушка";
         Long newTimeStamp = System.currentTimeMillis();
-        String newBodyOfNote = "texts";
+        String newBodyOfNote = "текст заметки, который будет вводится с например jsp странцы";
 
         //создание заметки
         Note newNote = Note.builder()
@@ -34,5 +34,3 @@ public class AddNoteServiceImpl implements AddNoteService {
 
     }
 }
-
-// TODO: 31.10.2020  Исправить вводы текстов
