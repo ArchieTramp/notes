@@ -25,7 +25,6 @@ public class DeleteNoteServiceImpl implements DeleteNoteService {
         //исправить ввод текста
         String title = "ADDFUCKINTITLE";
 
-
         noteRepository.deleteNoteByTitle(title);
 
     }

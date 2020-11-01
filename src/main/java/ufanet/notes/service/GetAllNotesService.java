@@ -1,7 +1,6 @@
 package ufanet.notes.service;
 
 import ufanet.notes.model.Note;
-import ufanet.notes.model.User;
 
 import java.util.List;
 
@@ -12,5 +11,5 @@ import java.util.List;
 
 public interface GetAllNotesService {
 
-    List<Note> getAllNotes(User user);
+    List<Note> getAllNotes(String user);
 }

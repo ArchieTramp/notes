@@ -19,20 +19,12 @@ public class EditNoteServiceImpl implements EditNoteService {
 
     @Override
     public void editNote(Note note) {
-        //исправить ввод текста
-        String title = "addtitlescanorbuffer";
 
-        noteRepository.findByTitle(title);
-
-        String editNote;
-
-        //исправить ввод текста
-        editNote = "HowToEditThisNote";
+        String editNote = "HowToEditThisNote";
         note.setNote(editNote);
         Long newTimeStamp = System.currentTimeMillis();
         note.setTimestamp(newTimeStamp);
         noteRepository.save(note);
-
 
     }
 }
